@@ -1,10 +1,6 @@
 pipeline {
     agent {
-        node {
-            label 'my-defined-label'
-            customWorkspace 'E:/programming/WebdriverIO/wdio-demo'
-        }
-    }
+        node any
     stages {
         stage('Hello') {
             steps {
